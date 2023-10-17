@@ -168,8 +168,6 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER =config('mail')
 EMAIL_HOST_PASSWORD =config('mail_pwd')
-# EMAIL_HOST_USER ='timewrapecom12@gmail.com'
-# EMAIL_HOST_PASSWORD ='lakwnllumtywgoci'
 EMAIL_USE_TLS = True
 
 
