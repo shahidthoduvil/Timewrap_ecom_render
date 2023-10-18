@@ -1,0 +1,10 @@
+
+Django==4.2.6
+gunicorn==21.2.0
+matplotlib
+Pillow
+python-decouple
+python-dotenv
+razorpay
+gunicorn
+
