@@ -7,4 +7,6 @@ python-decouple
 python-dotenv
 razorpay
 gunicorn
+psycopg2
+psycopg
 
