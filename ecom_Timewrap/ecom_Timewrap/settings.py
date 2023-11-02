@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'categories',
     'admin_product',
     'order',
+    'cloudinary',
+
 
 ]
 
@@ -99,7 +101,7 @@ DATABASES = {
   'default': {
        'ENGINE': 'django.db.backends.postgresql',
        'NAME':os.getenv('Database'),
-       'USER':os.getenv('Username'),
+       'USER':os.getenv('User_name'),
        'PASSWORD':os.getenv('Password'),
        'HOST':os.getenv('Hostname'),
        'PORT':os.getenv('Port')
@@ -175,3 +177,12 @@ EMAIL_USE_TLS = True
 
 KEY=os.getenv('id')
 SECRET=os.getenv('secret')
+
+
+
+CLOUDINARY_STORAGE = {
+'CLOUD_NAME':config('Cloud_Name'),
+'API_KEY': config('API_KEY'),
+'API_SECRET': config('Secret_Key'),
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

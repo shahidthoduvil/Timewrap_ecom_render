@@ -196,7 +196,7 @@ class CartItem(models.Model):
 class Banner(models.Model):
     heading=models.CharField(max_length=50,blank=True)
     description=models.TextField(blank=True)
-    image=models.ImageField(upload_to='banner/',blank=True)
+    image=models.ImageField(upload_to='banner/',blank=True,null=True)
 
     def __str__(self):
         return self.heading

@@ -5,7 +5,8 @@ from .import views
 
 urlpatterns = [
     # .......................................................user side.......................................................
-    path('',views.home,name="home"),
+    path('/',views.home,name="home"),
+    
 
   
 

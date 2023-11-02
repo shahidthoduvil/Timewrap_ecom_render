@@ -27,8 +27,6 @@ def home(request):
               
              }
        
-        
-
     return render(request,'user_side/home.html',context)
 
 def category(request):
