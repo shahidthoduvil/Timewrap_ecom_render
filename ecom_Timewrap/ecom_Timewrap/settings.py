@@ -183,7 +183,7 @@ SECRET=os.getenv('secret')
 
 CLOUDINARY_STORAGE = {
 'CLOUD_NAME':config('Cloud_Name'),
-'API_KEY': config('API_KEY'),
-'API_SECRET': config('Secret_Key'),
+'API_KEY':config('Cloud_API_KEY') ,
+'API_SECRET': config('Cloud_Key'),
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
